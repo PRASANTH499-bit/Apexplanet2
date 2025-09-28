@@ -1,0 +1,79 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+/* Contact Form */
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+input, textarea, button {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: teal;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive Layout */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.sidebar, .content, .extra {
+  padding: 15px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+/* Media Query */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* To-Do List */
+.todo-section {
+  margin-top: 20px;
+}
+
+#taskList {
+  list-style: none;
+  padding: 0;
+}
+
+#taskList li {
+  background: #fff;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#taskList li button {
+  background: red;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
+}
